@@ -12,7 +12,7 @@ npm: 9.6.6
 
 ## Important Notes
 
-> Listing with ID 2d8feca0-062f-4695-91db-9e8fb694ab24 returns broken images for both coverImage and images array.
+> Listing with ID 2d8feca0-062f-4695-91db-9e8fb694ab24 is returning broken images for both coverImage and images array. 
 
 > Grey5 in Figma is #F3F3F3 - undertext reads #F5F4F4
 

@@ -30,13 +30,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-###Home
+> Home
 
 ```bash
 http://localhost:3000
 ```
 
-###Listings
+> Listings
 
 ```bash
 http://localhost:3000/2d8feca0-062f-4695-91db-9e8fb694ab24

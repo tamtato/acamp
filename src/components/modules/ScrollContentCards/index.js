@@ -24,9 +24,9 @@ const ScrollContent = () => {
       </div>
 
       <div className="w-full h-info-card flex overflow-x-auto lg:justify-center">
-        {contentList.map((content) => {
+        {contentList.map((content, i) => {
           return (
-            <div key={content.text} className="ml-4">
+            <div key={content.text} className={`ml-4 ${i === 2 && 'mr-4'}`}>
               <ContentCard text={content.text} icon={content.icon} />
             </div>
           );

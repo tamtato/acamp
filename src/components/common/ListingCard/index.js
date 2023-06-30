@@ -1,7 +1,6 @@
 import CoverImage from './CoverImage';
 import Amenities from './Amenities';
 import PropertyText from './PropertyText';
-import Image from 'next/image';
 
 const ListingCard = ({ listing }) => {
   return (

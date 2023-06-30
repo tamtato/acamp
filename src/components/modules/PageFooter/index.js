@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 const PageFooter = () => {
   return (
     <div className="w-full h-footer [@media(max-width:320px)]:h-[520px] flex relative sm:w-55 lg:w-30 2xl:w-15 sm:mb-10">

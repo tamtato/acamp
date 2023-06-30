@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 const CardHeader = ({ listing }) => {
   return (
     <div className="font-semibold text-sm flex justify-between">

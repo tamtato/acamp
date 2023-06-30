@@ -1,9 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Notes
+## Versions
 
-Grey5 in Figma is #F3F3F3 - undertext reads #F5F4F4
-Listing with ID 2d8feca0-062f-4695-91db-9e8fb694ab24 returns broken images for both coverImage and images array. I have <Image /> onError prop checking for broken images, if broken a placeholder loader is shown
+```bash
+Node.js: v20.1.0
+```
+
+```bash
+npm: 9.6.6
+```
+
+## Important Notes
+
+> Listing with ID 2d8feca0-062f-4695-91db-9e8fb694ab24 returns broken images for both coverImage and images array. I have <Image /> onError prop checking for broken images, if broken a placeholder loader is shown.
+
+> Grey5 in Figma is #F3F3F3 - undertext reads #F5F4F4
 
 ## Getting Started
 
@@ -19,21 +30,22 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+###Home
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+http://localhost:3000
+```
 
-## Learn More
+###Listings
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+http://localhost:3000/2d8feca0-062f-4695-91db-9e8fb694ab24
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+http://localhost:3000/323d58d1-2d8b-4402-98a1-d440d2b57b77
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+http://localhost:3000/32b672fc-4e5e-4369-a32a-fa361e81c39a
+```

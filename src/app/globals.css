@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loadingCardBackground {
+  background: linear-gradient(
+    -45deg,
+    #d1d0cd80,
+    #ffffff,
+    #d1d0cd80,
+    #ffffff,
+    #d1d0cd80
+  );
+  background-size: 400% 400%;
+  animation: gradient 1.5s linear infinite;
+}
+
+.loadingBackground {
+  background: linear-gradient(-45deg, #d1d0cd80, #ffffff, #d1d0cd80, #ffffff);
+  background-size: 800% 800%;
+  animation: gradient 1.5s linear infinite;
+}
+
+@keyframes gradient {
+  from {
+    background-position: right, center;
+  }
+}

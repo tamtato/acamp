@@ -1,43 +1,31 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const CoverImage = ({ listing }) => {
-  const [coverImg, setCoverImg] = useState(listing.coverImage);
-  const [fallbackImgIndex, setFallbackImgIndex] = useState(0);
-
-  const handleSetFallbackImg = () => {
-    if (fallbackImgIndex <= listing.images.length - 1) {
-      return setCoverImg(listing.images[fallbackImgIndex].imageUrl);
-    }
-    return setCoverImg('');
-  };
-
-  useEffect(() => {
-    if (coverImg !== listing.coverImage) {
-      setFallbackImgIndex(fallbackImgIndex + 1);
-    }
-  }, [coverImg]);
+  const [showImage, setShowImage] = useState(true);
 
   return (
     <div
       className={`h-listing-card-image relative bg-center bg-cover sm:rounded-lg w-full ${
-        coverImg ? '' : 'loadingBackground'
+        showImage ? '' : 'loadingBackground'
       }`}
       style={
-        coverImg && {
-          backgroundImage: `url(${coverImg})`,
+        showImage && {
+          backgroundImage: `url(${listing.coverImage})`,
         }
       }
     >
-      <Image
-        src={coverImg}
-        alt="Listing Image"
-        width={0}
-        height={0}
-        onError={() => {
-          handleSetFallbackImg();
-        }}
-      />
+      {showImage && (
+        <Image
+          src={listing.coverImage}
+          alt="Listing Image"
+          width={0}
+          height={0}
+          onError={() => {
+            setShowImage(false);
+          }}
+        />
+      )}
     </div>
   );
 };
